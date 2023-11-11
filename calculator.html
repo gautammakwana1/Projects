@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Calculator is here....</title>
+<style>
+.btn{
+    background-color: chocolate;
+}
+#zero{
+    width: 62px;
+}
+input
+{
+    background-color: aqua;
+    width: 20px;
+    height: 25px;
+    margin: 1px;
+    margin-top: 5px;
+    box-sizing: content-box;
+    border-radius: 80px;
+    cursor: -moz-grab;
+}
+</style>
+</head>
+<body>
+    <form name="Calculator">
+        <input type="text" style="background-color: yellow; width: 153px ;" id = "ans">
+        <div>
+            <input type="button" onclick="SIGN('%')" , value="%">
+            <input type="button" onclick="CLEAR()" , value="C" , class="clear" , style="background-color: rgb(43, 226, 49);">
+            <input type="button" onclick="BACK()" , value="⌫">
+            <input type="button" style="margin: 2px;" onclick="SIGN('/')" , value="/">
+            <br>
+            <input type="button" onclick="Calc('7')" , value="7" , class="btn">
+            <input type="button" onclick="Calc('8')" , value="8" , class="btn">
+            <input type="button" onclick="Calc('9')" , value="9" , class="btn">
+            <input type="button" style="margin: 2px;" onclick="SIGN('*')", value="x">
+            <br>
+            <input type="button" onclick="Calc('4')" , value="4" , class="btn">
+            <input type="button" onclick="Calc('5')" , value="5" , class="btn">
+            <input type="button" onclick="Calc('6')" , value="6" , class="btn">
+            <input type="button" style="margin: 2px;" onclick="SIGN('-')" , value="-">
+            <br>
+            <input type="button" onclick="Calc('1')" , value="1" , class="btn">
+            <input type="button" onclick="Calc('2')" , value="2" , class="btn">
+            <input type="button" onclick="Calc('3')" , value="3" , class="btn">
+            <input type="button" style="margin: 2px;" onclick="SIGN('+')" , value="+">
+            <br>
+            <input type="button" onclick="Calc('0')" , value="0" , id="zero">
+            <input type="button" onclick="Calc('.')" , value=".">
+            <input type="button" onclick="ANSWER()" , value="=">
+        </div>
+    </form>
+    <script src="Fcalculator.js"></script>
+</body>
+</html>
